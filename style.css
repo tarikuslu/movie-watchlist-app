@@ -59,6 +59,11 @@ form {
     border-radius: .4em;
 }
 
+form div {
+    display: flex;
+    align-items: center;
+}
+
 form input,
 form button {
     border: none;
@@ -195,4 +200,58 @@ h5 {
 
 .film-detail button i {
     padding-right: .5em;
+}
+
+@media (max-width: 706px) {
+    body {
+        font-size: 0.7rem;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 3em;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    h4 {
+        margin: 1.5em 0;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    .film-container {
+        flex-direction: column;
+    }
+
+    form button {
+        border: none;
+        font-size: 1.2em;
+        width: 100%;
+    }
+
+    .film-banner {
+        align-self: center;
+    }
+
+    .film-banner img {
+        width: 7em;
+    }
+
+}
+
+@media (max-width: 280px) {
+    .film-detail {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .film-detail p:nth-child(2) {
+        margin: 1em 0;
+    }
 }

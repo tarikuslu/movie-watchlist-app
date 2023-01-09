@@ -45,6 +45,7 @@ function handleFilmSearch(e) {
           </div>
            </div>
             `;
+            searchInputEl.value = "";
           });
       });
     })
